@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/less/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exibir Informações</h1>
+  <form id="infoForm">
+    <label for="nome">Nome Completo:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="endereco">Endereço:</label>
+    <input type="text" id="endereco" name="endereco"><br><br>
+
+    <label for="cpf">CPF:</label>
+    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Ex: 123.456.789-00" required><br><br>
+
+    <label for="rg">RG:</label>
+    <input type="text" id="rg" name="rg" pattern="\d{2}\.\d{3}\.\d{3}-\d" placeholder="Ex: 12.345.678-9" required><br><br>
+
+    <button type="button" onclick="exibirInformacoes()">Exibir Informações</button>
+  </form>
+
+  <div id="infoContainer"></div>
+
+  <script src="/script/main.js"></script>
+</body>
+</html>
